@@ -39,9 +39,9 @@
 				<div class="navbar-header">
 					<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png"
 							alt="Logo la chouette agence, entreprise de webdesign à Lyon" height="40" /></a>
-					<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse"
+					<button aria-label="Ouvrir le menu de navigation" id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse"
 						data-target=".navbar-1">
-						<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+						<span class="icon-bar"></span><span
 							class="icon-bar"></span><span class="icon-bar"></span>
 					</button>
 				</div>
@@ -84,16 +84,15 @@
 			<div class="container bloc-lg">
 				<div class="row">
 					<div class="col-sm-6">
-						<form id="form_1" novalidate success-msg="Your message has been sent."
-							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+						<form id="form_1" novalidate>
 							<div class="form-group">
-								<label>
+								<label for="name">
 									Nom
 								</label>
-								<input id="name" class="form-control" required />
+								<input id="name" type="text" class="form-control" required />
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="email">
 									Adresse email
 								</label>
 								<input id="email" class="form-control" type="email" required />
@@ -101,16 +100,16 @@
 							<div class="form-group">
 								<label>
 									Comment nous avez-vous connu ?
+									<input class="form-control" type="text" required id="input_504" />
 								</label>
-								<input class="form-control" type="email" required id="input_504" />
 							</div>
 							<div class="form-group">
-								<label>
-									Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
+								<label for="message">
+									Brief de votre projet (Ajoutez autant de détails que nécessaire)
 								</label><textarea id="message" class="form-control" rows="4" cols="50"
 									required></textarea>
 							</div>
-							<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
+							<button aria-label="Envoyer le message" class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
 								type="submit">
 								Envoyer
 							</button>
@@ -118,7 +117,7 @@
 					</div>
 					<div class="col-sm-6">
 						<address>
-							<a href="mailto:contact@lachouetteagence.com">contact@lachouetteagence.com</a>
+							<a aria-label="Nous envoyer un Mail" href="mailto:contact@lachouetteagence.com">contact@lachouetteagence.com</a>
 							<p>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi</p>
 						</address>
 					</div>
@@ -128,7 +127,7 @@
 		<!-- bloc-7 END -->
 	</main>
 	<!-- ScrollToTop Button -->
-	<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span
+	<a aria-label="Retourner en haut de la page" class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span
 			class="fa fa-chevron-up"></span></a>
 	<!-- ScrollToTop Button END-->
 
@@ -143,25 +142,25 @@
 					<div class="row row-no-gutters social">
 						<div class="col-sm-3">
 							<div class="text-center">
-								<a class="social" href="https://twitter.com"><span
+								<a aria-label="Lien Twitter de La Chouette Agence" class="social" href="https://twitter.com"><span
 										class="fa fa-twitter icon-md"></span></a>
 							</div>
 						</div>
 						<div class="col-sm-3">
 							<div class="text-center">
-								<a class="social" href="https://www.facebook.com"><span
+								<a aria-label="Lien Facebook de La Chouette Agence" class="social" href="https://www.facebook.com"><span
 										class="fa fa-facebook icon-md"></span></a>
 							</div>
 						</div>
 						<div class="col-sm-3">
 							<div class="text-center">
-								<a class="social" href="https://dribbble.com"><span
+								<a aria-label="Lien Dribble de La Chouette Agence" class="social" href="https://dribbble.com"><span
 										class="fa fa-dribbble icon-md"></span></a>
 							</div>
 						</div>
 						<div class="col-sm-3">
 							<div class="text-center">
-								<a class="social" href="https://www.instagram.com"><span
+								<a aria-label="Lien Instagram de La Chouette Agence" class="social" href="https://www.instagram.com"><span
 										class="fa fa-instagram icon-md"></span></a>
 							</div>
 						</div>
